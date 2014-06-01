@@ -1,0 +1,19 @@
+#
+# comment
+#
+
+# editer temp file
+*~
+
+# os depend file
+.DS_Store
+
+# ruby bundle install vender 
+vender/
+
+# all .cache file
+*.cache
+
+#
+*.o
+
