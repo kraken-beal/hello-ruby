@@ -3,6 +3,12 @@
 # comment
 ###
 
+
+desc 'Run unit test'
+task :test do
+    sh 'ruby test_maxNum.rb'
+end
+
 # puts "hello"
 task :hello do
     puts 'hello'
@@ -16,3 +22,5 @@ end
 #
 task :all=>[:hello_world, :echo]
 
+#
+task ;default => :test
