@@ -23,4 +23,5 @@ end
 task :all=>[:hello_world, :echo]
 
 #
-task ;default => :test
+task :default => :test
+
