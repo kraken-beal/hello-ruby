@@ -13,15 +13,15 @@ before_install:
 - sh "echo 'hello'"
 - sh "echo 'world'"
 before_script:
-- ruby -v
-- ruby -v
+#- ruby -v
+#- ruby -v
 script: 
 - rake
 
-notifications:
-  emails:
-    - foo@bar.com
-    - foo@example.com
-  on_success: always # default: change
-  on_failure: always
+#notifications:
+#  emails:
+#    - foo@bar.com
+#    - foo@example.com
+#  on_success: always # default: change
+#  on_failure: always
 
