@@ -15,6 +15,9 @@ env:
 #- DB=pgsql
 #- DB=sqlite
 
+gemfile:
+- Gemfile
+
 before_install:
 - gem update --system
 - gem --version
@@ -23,6 +26,8 @@ before_install:
 before_script:
 - gem update --system
 - gem --version
+- chmod -R 664 Gemfile
+- cp ./Readme ./readme.txt
 
 script: 
 - rake
