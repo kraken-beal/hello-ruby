@@ -8,5 +8,20 @@ rvm:
 #- jruby-19mode # JRuby in 1.9 mode
 #- rbx-2.1.1
 #- 1.8.7
-script: rake
+
+before_install:
+- sh "echo 'hello'"
+- sh "echo 'world'"
+before_script:
+- ruby -v
+- ruby -v
+script: 
+- rake
+
+notifications:
+  emails:
+    - foo@bar.com
+    - foo@example.com
+  on_success: always # default: change
+  on_failure: always
 
