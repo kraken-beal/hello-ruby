@@ -12,18 +12,21 @@ rvm:
 before_install:
 - gem update --system
 - gem --version
+
 before_script:
 - gem update --system
 - gem --version
+
 addons:
 - postgresql: "9.3"
+
 script: 
 - rake
 
 notifications:
   emails:
     - krakenbeal@gmail.com
-    #- foo@example.com
+#   - foo@example.com
   on_success: always # default: change
   on_failure: always
 
