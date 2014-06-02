@@ -10,18 +10,20 @@ rvm:
 #- 1.8.7
 
 before_install:
-- ruby --version
+- gem update --system
 - gem --version
 before_script:
-#- ruby -v
-#- ruby -v
+- gem update --system
+- gem --version
+addons:
+- postgresql: "9.3"
 script: 
 - rake
 
-#notifications:
-#  emails:
-#    - foo@bar.com
-#    - foo@example.com
-#  on_success: always # default: change
-#  on_failure: always
+notifications:
+  emails:
+    - krakenbeal@gmail.com
+    #- foo@example.com
+  on_success: always # default: change
+  on_failure: always
 
