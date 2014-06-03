@@ -27,7 +27,8 @@ before_script:
 - gem update --system
 - gem --version
 - chmod -R 664 Gemfile
-- cp ./Readme ./readme.txt
+#- cp ./Readme ./readme.txt
+
 
 script: 
 - rake
