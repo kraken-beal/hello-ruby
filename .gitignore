@@ -7,12 +7,18 @@
 
 # os depend file
 .DS_Store
+.Thumbs.db
 
 # ruby bundle install vender 
 vender/
 
-# all .cache file
+# all .cache .backup and .tmp file
 *.cache
+*.backup
+*.back
+*.tmp
+*.swap
+*~
 
 #
 *.o
