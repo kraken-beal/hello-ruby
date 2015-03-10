@@ -19,6 +19,7 @@ vender/
 *.tmp
 *.swap
 *~
+Gemfile.lock
 
 #
 *.o
