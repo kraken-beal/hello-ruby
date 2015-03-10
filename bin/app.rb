@@ -4,7 +4,7 @@
 require 'pathname'
 
 # p File.expand_path(File.dirname(__FILE__)) #=> 実行中のスクリプトのパス
-lib = File.expand_path(File.dirname(__FILE__)) + "/../libs/"
+lib = File.expand_path(File.dirname(__FILE__)) + "/../lib/"
 
 require File.expand_path(lib + 'maxNum.rb')
 require File.expand_path(lib + 'miniNum.rb')

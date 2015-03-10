@@ -5,7 +5,7 @@ require 'minitest/autorun'
 
 require 'pathname'
 
-lib = File.expand_path(File.dirname(__FILE__)) + "/../libs/"
+lib = File.expand_path(File.dirname(__FILE__)) + "/../lib/"
 
 require File.expand_path(lib + 'miniNum.rb')
 
